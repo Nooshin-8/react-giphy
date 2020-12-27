@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import '../assets/stylesheets/application.scss';
 
 const Hello = (props) => {
-    <div>Hello, {props.name}</div>;
+  return <div>Hello, {props.name}</div>;
+}
+
+class Hello extends Component {
+  constructor() {
+
+  }
+
+  render() {
+
+  }
 }
 
 const root = document.getElementById('root');
