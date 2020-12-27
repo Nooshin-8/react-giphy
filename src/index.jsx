@@ -19,7 +19,7 @@ class Hello extends Component {
   render() {
     // the goal of render is to build and return HTMl
     return (
-      <div>Hello {this.props.name}</div>
+      <div className={this.state.clicked ? }>Hello {this.props.name}</div>
     )
   }
 }
