@@ -3,14 +3,9 @@ import ReactDOM from 'react-dom';
 
 import '../assets/stylesheets/application.scss';
 
-const Hello = ({ name }) => {
-  return (
-    <div>
-      Hello,
-      {name}
-    </div>
-  );
-};
+const Hello = (props) => {
+    <div>Hello, {props.name}</div>;
+}
 
 const root = document.getElementById('root');
 if (root) {
