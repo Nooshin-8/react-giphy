@@ -16,10 +16,16 @@ class Hello extends Component {
     };
   }
 
+  handleClick() {
+    // in this method I want to change the state
+
+  }
+
   render() {
     // the goal of render is to build and return HTMl
     return (
-      <div className={this.state.clicked ? 'clicked' : null}>
+      <div className={this.state.clicked ? 'clicked' : null}
+      onClick={}>
         Hello {this.props.name}
       </div>
     )
