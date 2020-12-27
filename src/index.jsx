@@ -18,14 +18,17 @@ class Hello extends Component {
 
   handleClick() {
     // in this method I want to change the state
-
+    //console.log('clicked');
+    this.setState({
+      clicked: !this.state.clicked;
+    });
   }
 
   render() {
     // the goal of render is to build and return HTMl
     return (
       <div className={this.state.clicked ? 'clicked' : null}
-      onClick={}>
+      onClick={this.handleClick}>
         Hello {this.props.name}
       </div>
     )
