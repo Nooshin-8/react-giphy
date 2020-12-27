@@ -3,17 +3,24 @@ import ReactDOM from 'react-dom';
 
 import '../assets/stylesheets/application.scss';
 
-const Hello = (props) => {
-  return <div>Hello, {props.name}</div>;
-}
+// const Hello = (props) => {
+//  return <div>Hello, {props.name}</div>;
+// }
 
 class Hello extends Component {
-  constructor() {
-
+  constructor(props) {
+    super(props);
+    // state is what will change during the lifetime of the component
+    this.state = {
+      clicked: false
+    };
   }
 
   render() {
-
+    // the goal of render is to build and return HTMl
+    return (
+      <div>Hello {this.props.name}</div>
+    )
   }
 }
 
