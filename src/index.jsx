@@ -21,6 +21,7 @@ class Hello extends Component {
     //console.log('clicked');
     this.setState({
       clicked: !this.state.clicked
+      counter: this.state.counter + 1
     });
   }
 
