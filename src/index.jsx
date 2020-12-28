@@ -20,7 +20,7 @@ class Hello extends Component {
     // in this method I want to change the state
     //console.log('clicked');
     this.setState({
-      clicked: !this.state.clicked;
+      clicked: !this.state.clicked
     });
   }
 
@@ -39,3 +39,21 @@ const root = document.getElementById('root');
 if (root) {
   ReactDOM.render(<Hello name="World" />, root);
 }
+
+// this is how we would have write it in JS without react
+// const div = document.querySelector('div');
+// div.addEventListener('click', (event) => {
+//  if (event.currentTarget.classList.contains('clicked')) {
+//    (event.currentTarget.classList.remove('clicked');
+//   } else {
+//    (event.currentTarget.classList.add('clicked');
+//   }
+//  });
+
+
+
+
+
+
+
+
